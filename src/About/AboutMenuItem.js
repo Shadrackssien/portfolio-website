@@ -1,9 +1,12 @@
-import React from 'react'
+import classNames from "classnames"
+import "./AboutMenu.css"
 
-function AboutMenuItem() {
+function AboutMenuItem({title, active, onClick}) {
   return (
-    <div>AboutMenuItem</div>
+    <div className={classNames("item", {active})} onClick={onClick}>
+      <h2 className="title">{title}</h2>
+    </div>
   )
 }
 
-export default AboutMenuItem
+export default AboutMenuItem;
