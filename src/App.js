@@ -7,6 +7,7 @@ import Projects from "./Projects/Projects"
 import Contact from "./Contact/Contact"
 import "./App.css"
 import Background from "./Background/Background";
+import PlayerStats from "./playerStats/PlayerStats";
 
 function App() {
   return <>
@@ -19,6 +20,7 @@ function App() {
       <Route path="/projects" element={<Projects/>} />
       <Route path="/contact" element={<Contact/>} />
       </Routes>
+      <PlayerStats />
     </Router>
   </>
 }

@@ -1,8 +1,12 @@
-import React from 'react'
+import Avatar from "../Avatar/Avatar.js"
+import AboutMenu from "./AboutMenu.js"
 
 function About() {
   return (
-    <div>About</div>
+    <div>
+      <Avatar page="about" />
+      <AboutMenu />
+    </div>
   )
 }
 
