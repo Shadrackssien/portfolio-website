@@ -4,19 +4,21 @@ import fallbackImage from "../assets/fallback-Image.png"
 
 function Background() {
   return (
-    <div className="shadow-overlay">
-        <video
-            playsInline
-            autoPlay
-            muted
-            loop
-            preload="auto"
-            id="bg"
-            poster={fallbackImage}
-        >
-            <source src={video} type="video/mp4" />
-        </video>
-    </div>
+    <>
+      <div className="shadow-overlay"></div>
+    <video
+      playsInline
+      autoPlay
+      muted
+      loop
+      preload="auto"
+      id="bg"
+      poster={fallbackImage}
+    >
+    <source src={video} type="video/mp4" />
+    </video>
+    </>
+    
   )
 }
 

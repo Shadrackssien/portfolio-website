@@ -5,22 +5,22 @@
 }
 
 .avatar.about {
-    height: 89vh;
-    bottom: -8vh;
+    height: 95vh;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .avatar.skills {
-    height: 190vh;
-    bottom: -110vh;
+    height: 180vh;
+    bottom: -70vh;
     left: -1rem;
     transform: translateX(10%) scaleX(-1);
 }
 
 .shadow-overlay-skills {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     display: block;
     position: fixed;
     background: linear-gradient(
@@ -36,13 +36,15 @@
         z-index: -5;
         height: 95vh;
         bottom: -15vh;
+        left: -1rem;
     }
 }
 
-@media (max-width: 700) {
+@media (max-width: 1100px) {
     .avatar.about {
         z-index: -5;
         height: 95vh;
         bottom: -15vh;
+        left: 55%;
     }
 }

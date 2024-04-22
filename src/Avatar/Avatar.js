@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import propTypes from "prop-types";
 import AvatarImage from "../assets/avatar-image.png";
 import "./Avatar.css"
 
 function Avatar({page}) {
     const avatarClass = `avatar ${page}`;
-    const spanClass = `shadow-over-lay-${page}`;
+    const spanClass = `shadow-overlay-${page}`;
 
   return (
     <div>
@@ -16,7 +16,7 @@ function Avatar({page}) {
 };
 
 Avatar.propTypes = {
-    page: PropTypes.string.isRequired,
+    page: propTypes.string.isRequired,
 };
 
 export default Avatar;
