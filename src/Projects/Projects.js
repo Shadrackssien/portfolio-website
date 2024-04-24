@@ -1,8 +1,10 @@
-import React from 'react'
+import ProjectsMenu from './ProjectsMenu'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <>
+      <ProjectsMenu />
+    </>
   )
 }
 

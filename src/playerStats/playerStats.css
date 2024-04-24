@@ -41,7 +41,7 @@ h2 {
 @media (max-width: 1100px) {
     #playerStats {
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-35%);
         width: 17rem;
         height: 2.5rem;
         top: 2rem;
