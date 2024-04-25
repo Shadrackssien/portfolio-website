@@ -1,5 +1,5 @@
 .skill-menu {
-    width: 31.2rem;
+    width: 32.6rem;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -139,7 +139,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .menu {
         width: 10rem;
         top: 22.5%;

@@ -59,7 +59,7 @@ a {
     }
 
     .nav {
-        top: calc(100vh - 4rem);
+        top: calc(100vh - 5rem);
         transform: translateX(-50%);
     }
     .nav-link {
