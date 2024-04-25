@@ -8,9 +8,16 @@ import Contact from "./Contact/Contact"
 import "./App.css"
 import Background from "./Background/Background";
 import PlayerStats from "./playerStats/PlayerStats";
+import {Helmet} from "react-helmet";
 
 function App() {
   return <>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Shadrack Essien</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+                <meta name="description" content="Helmet application" />
+    </Helmet>
     <Router>
       <Nav />
       <Background />

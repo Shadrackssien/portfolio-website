@@ -1,6 +1,9 @@
 import emailjs from "emailjs-com"
 import DOMPurify from 'dompurify'
 import { useState } from "react"
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 function ContactMenu() {
     const initialState = {
@@ -88,7 +91,8 @@ function ContactMenu() {
     }
 
   return (
-    <div className="contact-menu">
+    <>
+     <div className="contact-menu">
         {!isSent && (
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
@@ -164,7 +168,35 @@ function ContactMenu() {
                 <p>You can safely leave this page</p>
             </div>
         )}
+
+        
     </div>
+
+    <div className="personal-links">
+            <h4>Social Media</h4>
+                <ul className="personal-links-list">
+                    <li>
+                        <a className="icons" href="https://github.com/Shadrackssien" target="_blank" >
+                            <FaGithub />
+                        </a>
+                    </li>
+                    <li>
+                        <a className="icons" href="https://www.linkedin.com/in/shadrack-essien/" target="_blank" >
+                        <FaLinkedin />
+                        </a>
+                    </li>
+                    <li>
+                        <a className="icons" href="https://twitter.com/shadrackssien" target="_blank" >
+                            <FaTwitter />
+                        </a>
+                    </li>
+                </ul>
+        
+        </div>
+
+    
+    </>
+   
   )
 }
 
